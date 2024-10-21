@@ -1,0 +1,498 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    background-color: #d80c8a;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
+/* Home Section Styles */
+.home-section {
+    background-image: radial-gradient(red,blue); /* Professional blue gradient */
+    color: rgb(250, 248, 255);
+    height: 25vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.home-section h1 {
+    font-size: 4rem; /* Large, eye-catching font size */
+    font-family: 'Poppins', sans-serif; /* Modern, professional font */
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Responsive Home Section */
+@media (max-width: 768px) {
+    .home-section h1 {
+        font-size: 2.5rem; /* Adjust for smaller screens */
+    }
+}
+
+/* About Me Section Styles */
+#about {
+    background-color: #f0f8ff; /* Light blue background for section */
+    padding: 50px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photo-container {
+    border: 5px solid #ff6347; /* Colorful border */
+    border-radius: 50%;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for photo */
+}
+
+.photo-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Circular image */
+}
+
+.about-text {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #111010;
+    padding: 20px;
+    background-color: #f770f0; /* Light orange background for text */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for text box */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}
+/* Education Section Styles */
+#education {
+    background-color: #f4f4f9; /* Light gray background */
+    padding: 50px;
+    text-align: center;
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.education-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.education-item {
+    background-color: #fff; /* White background for each education item */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin: 20px;
+    width: 280px; /* Fixed width for consistency */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.education-item:hover {
+    transform: translateY(-5px); /* Slightly raise the item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
+}
+
+.education-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1e3c72; /* Same professional blue as the home section */
+}
+
+.education-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.education-item a {
+    color: #2a5298;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.education-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Education Section */
+@media (max-width: 768px) {
+    .education-item {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    #education h2 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+}
+
+
+/* Skills Section Styles */
+#skills {
+    background-color: #f9f9f9; /* Light background */
+    padding: 50px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.skill-item {
+    background-color: #fff; /* White background for each skill item */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    margin: 20px;
+    width: 280px; /* Fixed width for consistency */
+    text-align: center;
+}
+.skill-item:hover{
+    transform: translateY(-5px); /* Slightly raise the item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
+}
+
+.skill-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1e3c72; /* Professional blue */
+}
+
+.skill-item ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.skill-item li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Responsive Skills Section */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    #skills h2 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+}
+/* Projects Section Styles */
+#projects {
+    background-color: #f9f9f9; /* Light background */
+    padding: 50px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.projects-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.project-item {
+    background-color: #fff; /* White background for each project item */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin: 20px;
+    width: 280px; /* Fixed width for consistency */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Slightly raise the item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
+}
+
+.project-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1e3c72; /* Same professional blue */
+}
+
+.project-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    color: #2a5298;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Projects Section */
+@media (max-width: 768px) {
+    .project-item {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    #projects h2 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+}
+/* Certifications Section Styles */
+#certifications {
+    background-color: #f4f4f9; /* Light gray background */
+    padding: 50px;
+    text-align: center;
+}
+
+#certifications h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.certifications-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.certification-item {
+    background-color: #fff; /* White background for each certification item */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin: 20px;
+    width: 280px; /* Fixed width for consistency */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.certification-item:hover {
+    transform: translateY(-5px); /* Slightly raise the item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow depth on hover */
+}
+
+.certification-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1e3c72; /* Same professional blue as other sections */
+}
+
+.certification-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.certification-item a {
+    color: #2a5298;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.certification-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Certifications Section */
+@media (max-width: 768px) {
+    .certification-item {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    #certifications h2 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+}
+/* Contact Section Styles */
+#contact {
+    background-color: #f4f4f9; /* Light gray background */
+    padding: 50px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center the content */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    margin-top: 20px;
+}
+
+form {
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px;
+    margin: 20px;
+    width: 300px; /* Fixed width for the form */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block-level label for better styling */
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    background-color: #1e3c72; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #2a5298; /* Darker button color on hover */
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media h3 {
+    margin-bottom: 10px; /* Space between heading and links */
+}
+
+.social-media a {
+    display: inline-block; /* Block display for spacing */
+    margin: 5px 10px; /* Space between links */
+    color: #2a5298; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Contact Section */
+@media (max-width: 768px) {
+    form {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    #contact h2 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+}
+
